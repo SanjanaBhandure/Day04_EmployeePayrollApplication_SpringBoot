@@ -1,14 +1,11 @@
 /*
 Spring Employee Payroll App Development.
-* Section 3: UC-1 Use Lombok Library to auto generate getters and setters for the DTO
-- For Eclipse and IntelliJ
-– Download Lombok Executable Jar and run the jar. This will identify the IDE and install the add on
-- For VS Code
-– Install Lombok
-- Add Lombok Dependency to POM File
+* Section 3: UC-2 Use Lombok Library for Logging
+- Note using Annotation @Slf4j at Class Level, Logging is activated
+- Note Logging Levels, Files and Patterns are handled in application.properties
 *
 * @author: Sanjana Bhandure.
-* @version: 1.5
+* @version: 1.6
 * @date: 12-07-2022
 */
 
