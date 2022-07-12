@@ -1,11 +1,12 @@
 /*
 Spring Employee Payroll App Development.
-* Section 2: UC-2 Introducing Services Layer in Employee Payroll App - Note that Controller in UC1 was creating the
-Model and returning the Model on the REST Calls. This is the job of services layer to manage the Model.
-- Autowired Annotation will be used to do Dependency Injection of the Services Object to the Controller.
+* Section 2: UC-3 Ability for the Services Layer to store the Employee Payroll Data
+- Note that Services Layer is not storing, updating or deleting Employee Payroll Data in UC 2.
+- In this use case the Services Layer will store this Data in a Memory as a List. As we go further down we will persist
+this data in DB.
 *
 * @author: Sanjana Bhandure.
-* @version: 1.3
+* @version: 1.4
 * @date: 12-07-2022
 */
 
@@ -54,9 +55,9 @@ public class EmployeePayrollController {
     }
 
     @PutMapping("/update")
-    public ResponseEntity<ResponseDTO> updateEmployeePayrollData(@RequestBody EmployeePayrollDTO employeePayrollDTO) {
+    public ResponseEntity<ResponseDTO> updateEmployeePayrollData(@PathVariable ("empId") int empId, @RequestBody EmployeePayrollDTO employeePayrollDTO) {
         EmployeePayrollData empData = null;
-        empData = employeePayrollService.updateEmployeePayrollData(employeePayrollDTO);
+        empData = employeePayrollService.updateEmployeePayrollData(empId, employeePayrollDTO);
         ResponseDTO respDTO = new ResponseDTO("Update Employee Payroll Data Successfully", empData);
         return new ResponseEntity<ResponseDTO>(respDTO, HttpStatus.OK);
     }
