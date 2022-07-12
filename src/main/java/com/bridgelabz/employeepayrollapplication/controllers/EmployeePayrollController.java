@@ -1,11 +1,12 @@
 /*
 Spring Employee Payroll App Development.
-* Section 3: UC-2 Use Lombok Library for Logging
-- Note using Annotation @Slf4j at Class Level, Logging is activated
-- Note Logging Levels, Files and Patterns are handled in application.properties
+* Section 3: UC-3 Determine the Logging Levels, Logging to Console or File, Logging Patterns, etc based on this
+application running in Dev, Staging or Production - Note we create application.properties for dev and production.
+- And in common application.properties define the profile using spring.profiles.active=dev. To use spring file add
+following dependency in POM file
 *
 * @author: Sanjana Bhandure.
-* @version: 1.6
+* @version: 1.7
 * @date: 12-07-2022
 */
 
