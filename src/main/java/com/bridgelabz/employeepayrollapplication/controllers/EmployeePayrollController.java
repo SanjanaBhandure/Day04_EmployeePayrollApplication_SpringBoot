@@ -1,12 +1,12 @@
 /*
 Spring Employee Payroll App Development.
-* Section 4: UC-1 Add Validation to Name Field so the REST call can be validated
-- To begin with make it a required field i.e. a not empty field
-- Then add pattern to it.
-- The Validation needs to be done for both Create and Update REST Calls
+* Section 4: UC-2 Provide User Friendly Error Response in case validation fails
+- Create a Custom Exception Handlers class and use @ControllerAdvice Annotation so that Spring Framework can call this
+class to handle Exceptions thrown during processing REST API Request.
+- To handle Validation Errors create @ExceptionHandler method for MethodArgumentNotValidException class is defined.
 *
 * @author: Sanjana Bhandure.
-* @version: 1.9
+* @version: 1.10
 * @date: 12-07-2022
 */
 
