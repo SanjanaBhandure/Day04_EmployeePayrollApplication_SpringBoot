@@ -1,12 +1,14 @@
 /*
 Spring Employee Payroll App Development.
-* Section 2: UC-3 Ability for the Services Layer to store the Employee Payroll Data
-- Note that Services Layer is not storing, updating or deleting Employee Payroll Data in UC 2.
-- In this use case the Services Layer will store this Data in a Memory as a List. As we go further down we will persist
-this data in DB.
+* Section 3: UC-1 Use Lombok Library to auto generate getters and setters for the DTO
+- For Eclipse and IntelliJ
+– Download Lombok Executable Jar and run the jar. This will identify the IDE and install the add on
+- For VS Code
+– Install Lombok
+- Add Lombok Dependency to POM File
 *
 * @author: Sanjana Bhandure.
-* @version: 1.4
+* @version: 1.5
 * @date: 12-07-2022
 */
 
