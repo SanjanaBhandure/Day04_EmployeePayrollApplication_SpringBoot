@@ -1,11 +1,10 @@
 /*
 Spring Employee Payroll App Development.
-* Section 4: UC-3 Ability to throw User Friendly Errors in case Employee Id is not found in Employee Payroll App.
-- Define a Custom Exception for Employee Not Found and through when Employee Id is passed as parameter.
-- Handle such Exceptions in @ExceptionHandler method for EmployeeNotException class.
+* Section 5: UC-1 Add remaining properties to the Payroll DTO and Model
+- Here we add gender, startDate, note, profilePic and department.
 *
 * @author: Sanjana Bhandure.
-* @version: 1.11
+* @version: 1.12
 * @date: 12-07-2022
 */
 
