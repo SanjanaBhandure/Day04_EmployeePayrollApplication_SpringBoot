@@ -1,6 +1,8 @@
 package com.bridgelabz.employeepayrollapplication.model;
 
 import com.bridgelabz.employeepayrollapplication.DTO.EmployeePayrollDTO;
+import org.springframework.stereotype.Service;
+
 
 public class EmployeePayrollData {
     private  long salary;
