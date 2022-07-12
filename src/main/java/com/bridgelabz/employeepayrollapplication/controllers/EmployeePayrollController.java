@@ -1,7 +1,7 @@
 /*
 Spring Employee Payroll App Development.
 * Section 2: UC-1 Introducing DTO and Model to Employee Payroll App - Note that we have kept the DTO and Model fairly
-simplistic with only Name and Salary
+simplistic with only Name and Salary.
 - This is because we are still in the setup of the Layers and once set we would make Employee Payroll as full-fledged
 Object for Front End to make REST Call.
 - Currently we will do CURL Call to ensure the REST Calls are working.
