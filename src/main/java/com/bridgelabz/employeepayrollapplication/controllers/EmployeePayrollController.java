@@ -1,10 +1,14 @@
 /*
 Spring Employee Payroll App Development.
-* Section 5: UC-1 Add remaining properties to the Payroll DTO and Model
-- Here we add gender, startDate, note, profilePic and department.
+* Section 5: UC-2 Ensure validations is done on the Payroll DTO
+- Here we need to add validators to gender, startDate, note, profilePic and department
+- Majority like note, profilePic, etc are just No Blank
+- The Validation needs to be done for both Create and Update REST Calls
+- Note: Used @JsonFormat(pattern="dd MMM yyyy") to convert startDate to Local Date as well as the Validation for Past and Present
+- Note: have added @Slf4j log to both Controller and Services
 *
 * @author: Sanjana Bhandure.
-* @version: 1.12
+* @version: 1.13
 * @date: 12-07-2022
 */
 
