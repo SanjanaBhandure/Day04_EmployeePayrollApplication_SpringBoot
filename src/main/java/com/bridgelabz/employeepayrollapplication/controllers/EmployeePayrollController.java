@@ -1,12 +1,11 @@
 /*
 Spring Employee Payroll App Development.
-* Section 4: UC-2 Provide User Friendly Error Response in case validation fails
-- Create a Custom Exception Handlers class and use @ControllerAdvice Annotation so that Spring Framework can call this
-class to handle Exceptions thrown during processing REST API Request.
-- To handle Validation Errors create @ExceptionHandler method for MethodArgumentNotValidException class is defined.
+* Section 4: UC-3 Ability to throw User Friendly Errors in case Employee Id is not found in Employee Payroll App.
+- Define a Custom Exception for Employee Not Found and through when Employee Id is passed as parameter.
+- Handle such Exceptions in @ExceptionHandler method for EmployeeNotException class.
 *
 * @author: Sanjana Bhandure.
-* @version: 1.10
+* @version: 1.11
 * @date: 12-07-2022
 */
 
