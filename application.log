@@ -109,3 +109,59 @@
 2022-07-12 21:24:23.557  INFO 19232 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2022-07-12 21:24:23.575  INFO 19232 --- [restartedMain] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 3.635 seconds (JVM running for 4.683)
 2022-07-12 21:24:23.580  INFO 19232 --- [restartedMain] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in { } Environment
+2022-07-12 21:24:41.809  INFO 19232 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-12 21:24:41.814  INFO 19232 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-12 21:24:41.829  INFO 19232 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-12 21:24:46.931  INFO 16888 --- [restartedMain] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.1 on DESKTOP-LPHCEAQ with PID 16888 (C:\Users\ADMIN\IdeaProjects\EmployeePayrollApplication\target\classes started by ADMIN in C:\Users\ADMIN\IdeaProjects\EmployeePayrollApplication)
+2022-07-12 21:24:46.933 DEBUG 16888 --- [restartedMain] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-07-12 21:24:46.934  INFO 16888 --- [restartedMain] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2022-07-12 21:24:46.991  INFO 16888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-12 21:24:46.992  INFO 16888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-12 21:24:47.695  INFO 16888 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-12 21:24:47.708  INFO 16888 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2022-07-12 21:24:48.429  INFO 16888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-12 21:24:48.430  INFO 16888 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2022-07-12 21:24:48.431  INFO 16888 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-07-12 21:24:48.431  INFO 16888 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-07-12 21:24:48.436  INFO 16888 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2022-07-12 21:24:48.443  INFO 16888 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-12 21:24:48.443  INFO 16888 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-07-12 21:24:48.546  INFO 16888 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-12 21:24:48.547  INFO 16888 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1555 ms
+2022-07-12 21:24:48.648  INFO 16888 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-12 21:24:49.003  INFO 16888 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-12 21:24:49.471  INFO 16888 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-12 21:24:49.576  WARN 16888 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-12 21:24:49.910  INFO 16888 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-12 21:24:49.954  INFO 16888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-12 21:24:49.977  INFO 16888 --- [restartedMain] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 3.431 seconds (JVM running for 4.117)
+2022-07-12 21:24:49.982  INFO 16888 --- [restartedMain] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in { } Environment
+2022-07-12 21:25:06.588  INFO 16888 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-12 21:25:06.595  INFO 16888 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-12 21:25:06.609  INFO 16888 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-12 21:47:47.188  INFO 17732 --- [restartedMain] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.1 on DESKTOP-LPHCEAQ with PID 17732 (C:\Users\ADMIN\IdeaProjects\EmployeePayrollApplication\target\classes started by ADMIN in C:\Users\ADMIN\IdeaProjects\EmployeePayrollApplication)
+2022-07-12 21:47:47.191 DEBUG 17732 --- [restartedMain] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-07-12 21:47:47.192  INFO 17732 --- [restartedMain] c.b.e.EmployeePayrollApplication         : The following 1 profile is active: "dev"
+2022-07-12 21:47:47.270  INFO 17732 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-12 21:47:47.271  INFO 17732 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-12 21:47:48.161  INFO 17732 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-12 21:47:48.183  INFO 17732 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2022-07-12 21:47:49.125  INFO 17732 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-12 21:47:49.126  INFO 17732 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2022-07-12 21:47:49.127  INFO 17732 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-07-12 21:47:49.127  INFO 17732 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-07-12 21:47:49.157  INFO 17732 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2022-07-12 21:47:49.177  INFO 17732 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-12 21:47:49.178  INFO 17732 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-07-12 21:47:49.316  INFO 17732 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-12 21:47:49.317  INFO 17732 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2045 ms
+2022-07-12 21:47:49.940  INFO 17732 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-12 21:47:50.583  INFO 17732 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-12 21:47:51.058  INFO 17732 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-12 21:47:51.134  WARN 17732 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-12 21:47:51.814  INFO 17732 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-12 21:47:51.886  INFO 17732 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-12 21:47:51.907  INFO 17732 --- [restartedMain] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 5.754 seconds (JVM running for 6.93)
+2022-07-12 21:47:51.912  INFO 17732 --- [restartedMain] c.b.e.EmployeePayrollApplication         : Employee Payroll App Started in { } Environment
+2022-07-12 21:48:31.166  INFO 17732 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-12 21:48:39.076  WARN 17732 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]

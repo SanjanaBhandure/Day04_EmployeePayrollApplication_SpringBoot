@@ -1,12 +1,12 @@
 /*
 Spring Employee Payroll App Development.
-* Section 3: UC-3 Determine the Logging Levels, Logging to Console or File, Logging Patterns, etc based on this
-application running in Dev, Staging or Production - Note we create application.properties for dev and production.
-- And in common application.properties define the profile using spring.profiles.active=dev. To use spring file add
-following dependency in POM file
+* Section 4: UC-1 Add Validation to Name Field so the REST call can be validated
+- To begin with make it a required field i.e. a not empty field
+- Then add pattern to it.
+- The Validation needs to be done for both Create and Update REST Calls
 *
 * @author: Sanjana Bhandure.
-* @version: 1.7
+* @version: 1.9
 * @date: 12-07-2022
 */
 
@@ -21,6 +21,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -47,7 +48,7 @@ public class EmployeePayrollController {
     }
 
     @PostMapping("/create")
-    public ResponseEntity<ResponseDTO> addEmployeePayrollData(@RequestBody EmployeePayrollDTO employeePayrollDTO) {
+    public ResponseEntity<ResponseDTO> addEmployeePayrollData(@Valid @RequestBody EmployeePayrollDTO employeePayrollDTO) {
         EmployeePayrollData empData = null;
         empData = employeePayrollService.createEmployeePayrollData(employeePayrollDTO);
         ResponseDTO respDTO = new ResponseDTO("Create Employee PayrollData:", empData);
