@@ -2,24 +2,31 @@ package com.bridgelabz.employeepayrollapplication.model;
 
 import com.bridgelabz.employeepayrollapplication.DTO.EmployeePayrollDTO;
 import lombok.Data;
-import org.springframework.stereotype.Service;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
-
-
+@Entity
+@Table(name = "employeePayrollApp")
 public @Data class EmployeePayrollData {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "employee_id")
     private int employeeID;
+    @Column(name = "name")
     private String name;
     private Long salary;
     public String gender;
     public LocalDate startDate;
     public String note;
     public String profilePic;
-    private List<String> department;
+    @ElementCollection
+    @CollectionTable(name = "employee_department",
+            joinColumns = @JoinColumn(name = "id"))
+    @Column(name = "department")
+    private  List<String> department;
 
-    public EmployeePayrollData(int empId, EmployeePayrollDTO employeePayrollDTO) {
-        this.employeeID = empId;
+    public EmployeePayrollData(EmployeePayrollDTO employeePayrollDTO) {
         this.name = employeePayrollDTO.name;
         this.salary = employeePayrollDTO.salary;
         this.gender = employeePayrollDTO.gender;
@@ -28,5 +35,8 @@ public @Data class EmployeePayrollData {
         this.profilePic=employeePayrollDTO.profilePic;
         this.department=employeePayrollDTO.department;
 
+    }
+
+    public EmployeePayrollData() {
     }
 }

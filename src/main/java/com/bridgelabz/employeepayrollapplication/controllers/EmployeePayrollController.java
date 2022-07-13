@@ -1,15 +1,13 @@
 /*
 Spring Employee Payroll App Development.
-* Section 5: UC-2 Ensure validations is done on the Payroll DTO
-- Here we need to add validators to gender, startDate, note, profilePic and department
-- Majority like note, profilePic, etc are just No Blank
-- The Validation needs to be done for both Create and Update REST Calls
-- Note: Used @JsonFormat(pattern="dd MMM yyyy") to convert startDate to Local Date as well as the Validation for Past and Present
-- Note: have added @Slf4j log to both Controller and Services
+* Section 5: UC-4 Ability to save Employee Payroll Data to MySQL DB - Note: saving Data to DB is done Last. This is
+because of volatility & clarity of data to store, IO Operation and DB Model changing has impact of Migration.
+- @Entity Annotation tells Hibernate to create a table out of the Employee Payroll Class
+- Create a Repository Interface to hold Employee Payroll Records. Spring automatically implements this repository interface
 *
 * @author: Sanjana Bhandure.
-* @version: 1.13
-* @date: 12-07-2022
+* @version: 1.14
+* @date: 13-07-2022
 */
 
 package com.bridgelabz.employeepayrollapplication.controllers;
