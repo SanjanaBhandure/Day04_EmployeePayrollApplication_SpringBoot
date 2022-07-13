@@ -34,15 +34,20 @@ public class EmployeePayrollServices implements IEmployeePayrollService{
         return employeePayrollRepository.save(empData);
     }
 
-    @Override
     public EmployeePayrollData updateEmployeePayrollData(int empId, EmployeePayrollDTO employeePayrollDTO) {
         EmployeePayrollData empData = this.getEmployeePayrollDataById(empId);
         empData.updateEmployeePayrollData(employeePayrollDTO);
         return employeePayrollRepository.save(empData);
     }
+
+
+
     public void deleteEmployeePayrollData(int empId) {
         EmployeePayrollData empData=this.getEmployeePayrollDataById(empId);
         employeePayrollRepository.delete(empData);
 
+    }
+    public List<EmployeePayrollData> getEmployeesByDepartment(String department) {
+        return employeePayrollRepository.findEmployeesByDepartment(department);
     }
 }
