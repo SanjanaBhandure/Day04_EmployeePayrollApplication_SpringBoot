@@ -1,12 +1,11 @@
 /*
 Spring Employee Payroll App Development.
-* Section 5: UC-4 Ability to save Employee Payroll Data to MySQL DB - Note: saving Data to DB is done Last. This is
-because of volatility & clarity of data to store, IO Operation and DB Model changing has impact of Migration.
-- @Entity Annotation tells Hibernate to create a table out of the Employee Payroll Class
-- Create a Repository Interface to hold Employee Payroll Records. Spring automatically implements this repository interface
+* Section 5: UC-5 Ability to develop rest of the CRUD Service Methods with MySQL Database
+- Note: This incudes all the CRUD operations of getting all data, getting specific employee data, updating the employee
+payroll data and finally deleting it.
 *
 * @author: Sanjana Bhandure.
-* @version: 1.14
+* @version: 1.15
 * @date: 13-07-2022
 */
 
